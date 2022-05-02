@@ -1,0 +1,27 @@
+SHA =   Secure Hash Algorithm (Algoritmo de Hash Seguro) é um conjunto de funções hash criptográficas projetadas pela NSA
+	(Agência de Segurança Nacional dos EUA).
+
+	A encritação gera um conjunto de caracteres identificador de 40 dígitos.
+
+SHA1 =  É uma forma curta de representar um arquivo.
+	Utilize o comando "opebssl sha1 (nome do arquivo)" no Git Bash para que lhe retorne o código do arquivo.
+
+Objetos Fundamentais =  Existem 3 objetos básicos para o versionamento do Git, sendo eles: Blobs, Trees, e Commits.
+	*Blob = É um objeto que guarda o arquivo e alguns metadados, como tamanho, \0, e o conteúdo do arquivo.
+	*Tree = É um objeto que armazena Blobs e o nome do arquivo, aponta pra outras Blobs, outras trees.
+	*Commit = É o objeto que irá juntar tudo e dar sentido pras alterações que estão sendo feitas. Ele aponta para
+		  um: Parent, que é o último commit realizado antes dele;
+		      Author, quem irá fazer o commit;
+		      Mensagem, indica o que está sendo realizado no commit em questão;
+		      Timestamp, um carimbo de tempo, que leva a data e a hora exata do commit em que foi criado;
+
+	fonte: https://git-scm.com/
+
+Comandos:
+*git init = inicia o git no repositório
+*git add = adiciona as modificações feitas para staged
+*git commit -m "mensagem"= commita as alterações
+*git remote add aliase/apelido url = adiciona o seu repositório remoto
+*git status = mostra o estado atual da sua branch
+*git push repositorio remoto(origin) branch(master) = empurra o seu repositório local para o remoto
+*git pull repositorio remoto(origin) branch(master) = puxa um repositório remoto para o local, para fazer a resolução de conflitos.
